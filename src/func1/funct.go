@@ -10,5 +10,7 @@ func main() {
 	fmt.Println(c)
 	if err == nil {
 		fmt.Println("No errors")
+	} else {
+		fmt.Println("Oops, get some errors :-(")
 	}
 }
