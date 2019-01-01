@@ -1,8 +1,9 @@
 package main
 
 import (
-	"os"
+	// "os"
 	"fmt"
+	"errors"
 )
 
 type PathError struct {
@@ -25,13 +26,18 @@ func (e *PathError) Error() string {
 }*/
 
 func main() {
-	fi, err := os.Stat("a.txt")
+	/*fi, err := os.Stat("a.txt")
 	if err != nil {
 		if e, ok := err.(*os.PathError); ok && e.Err != nil {
 			// 获取PathError类型变量e中的其他信息并处理
 		}
 	}
 
-	fmt.Println(fi)
+	fmt.Println(fi)*/
 	// fmt.Println(err)
+	fmt.Println("123")
+	// panic("Oops, got error")
+	panic(Error("file not exists"))
+
+	fmt.Println("123456")
 }
