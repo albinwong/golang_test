@@ -20,7 +20,7 @@ func main() {
 
 	// 10个goroutine是并发执行的
 	for i := 0; i < 10; i++ {
-		go Count(lock)
+		go Count(lock) // goroutine
 	}
 
 	// 用for 循环来不断检查counter的值(同样需要加锁)
