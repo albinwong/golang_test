@@ -27,6 +27,7 @@ func main() {
 	for {
 		lock.Lock()
 
+		fmt.Println(counter)
 		c := counter
 
 		lock.Unlock()
