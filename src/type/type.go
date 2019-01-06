@@ -34,7 +34,6 @@ func main() {
 		fmt.Println("a = ",a)
 }
 
-
 /*func main() {
 	var v1 interface{} = 1
 	fmt.Println(v1)

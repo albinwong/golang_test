@@ -14,7 +14,7 @@ func main() {
 		go Count(chs[i])
 	}
 
-	for _, ch := range(chs) {
-		<- ch // 读取10个channel数据\
+	for _, ch := range chs {
+		<-ch // 读取10个channel数据\
 	}
 }

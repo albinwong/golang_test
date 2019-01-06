@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+/*func main() {
 	// channel声明方式
 	var chanName chan ElementType // 声明方式
 	var a chan int // 声明一个类型为int的channel
@@ -14,4 +14,21 @@ func main() {
 	ch <- value // channel写入
 
 	value := <-ch // channel读取
+}*/
+
+
+func main() {
+	
+	ch := make(chan int, 1) 
+	for {
+		select {
+			case ch <- 0:
+			case ch <- 1: 
+		}
+		i := <-ch
+        fmt.Println("Value received:", i)
+        if i == 0 {
+        	break
+        }
+    }
 }
