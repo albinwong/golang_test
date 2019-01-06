@@ -21,7 +21,7 @@ func (v Vector) DoAll(u Vector) {
 
 	// 等待所有CPU的任务完成
 	for i := 0; i < NCPU; i++ {
-		<- c // 获取到一个数据，表示一个CPU计算完成了 }
+		<- c // 获取到一个数据，表示一个CPU计算完成了
 	}
 	// 到这里表示所有计算已经结束
 }
